@@ -8,7 +8,7 @@ module RenderNestedOptionsHelper
 
         node = options[:node]
 
-        this_node      = options[:selected] == node
+        this_node      = options[:selected] == node[:id]
         selected_class = this_node ? ' selected' : nil
         selected       = this_node ? " selected='selected'" : nil
 
